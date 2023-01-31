@@ -13,7 +13,7 @@
     "prepare": "husky install",
     "prettier:fix": "prettier **/*.ts **/*.tsx --write",
     "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
-    "stylelint:fix": "stylelint '**/*.scss' --fix",
+    "stylelint:fix": "stylelint **/*.scss --fix",
     "pre-commit": "yarn lint-staged"
   },
   "dependencies": {

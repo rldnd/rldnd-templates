@@ -51,6 +51,7 @@ export default defineConfig({
     checker({
       typescript: true,
       eslint: { lintCommand: 'eslint --fix --ext .js,.jsx,.ts,.tsx ./src' },
+      stylelint: { lintCommand: 'stylelint **/*.scss --fix' },
     }),
     envCompatible({ prefix: 'VITE' }),
   ],
