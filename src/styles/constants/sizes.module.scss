@@ -1,0 +1,24 @@
+$S_HEADER_HEIGHT: 80px;
+$S_HEADER_HEIGHT_NUMBER: 80;
+$S_LNB_WIDTH: 280px;
+$S_LNB_WIDTH_NUMBER: 280;
+$S_LNB_MENU_GAP: 40px;
+
+$S_PAGE_TITLE: 30px;
+$S_PAGE_GAP: 24px;
+$S_PAGE_FILTER: 42px;
+$S_PAGE_TAB: 46px;
+
+$S_PAGINATION: 80px;
+
+:export {
+  headerHeight: $S_HEADER_HEIGHT;
+  headerHeightNumber: $S_HEADER_HEIGHT_NUMBER;
+  lnbWidth: $S_LNB_WIDTH;
+  lnbWidthNumber: $S_LNB_WIDTH_NUMBER;
+  pageTitle: $S_PAGE_TITLE;
+  pageGap: $S_PAGE_GAP;
+  pageFilter: $S_PAGE_FILTER;
+  pageTab: $S_PAGE_TAB;
+  pagination: $S_PAGINATION;
+}
