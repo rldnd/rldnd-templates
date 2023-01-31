@@ -1,12 +1,14 @@
-# vite-react template
+# templates
 
-## How To Use
+## vite-react-typescript template
+
+### How To Use?
 
 ```
-  npx rldnd-cli
+npx rldnd-cli
 ```
 
-## Tech Stack
+### Tech Stack
 
 - Vite
 - React
@@ -15,9 +17,9 @@
 - React-Query
 - Recoil
 
----
+### Files
 
-### vite.config.ts
+`vite.config.ts`
 
 If you want modify css modules hashPrefix
 
