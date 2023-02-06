@@ -1,0 +1,19 @@
+@use 'src/styles/constants' as c;
+@use 'src/styles/mixins' as m;
+
+.wrapper {
+  @include m.flex;
+  width: 100%;
+  min-height: 100vh;
+
+  > h1 {
+    @include m.fontH1('bold');
+    margin-bottom: 32px;
+    color: c.$C_BLUE_100;
+  }
+
+  > h2 {
+    @include m.fontH2('medium');
+    color: c.$C_BLUE_50;
+  }
+}

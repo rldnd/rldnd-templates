@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, type Dispatch, type SetStateAction } from 'react';
+import { type Dispatch, type SetStateAction, useCallback, useEffect, useState } from 'react';
 
 export type TIntersectionObserverCallback = (entry: IntersectionObserverEntry, observer: IntersectionObserver) => void;
 

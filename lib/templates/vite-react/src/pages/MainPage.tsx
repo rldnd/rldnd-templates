@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styles from './mainPage.module.scss';
 
 const MainPage: React.FC = () => {

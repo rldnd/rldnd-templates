@@ -1,8 +1,9 @@
 import React from 'react';
+
 import ReactDOM from 'react-dom/client';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import { RouterProvider } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
-import { QueryClient, QueryClientProvider } from 'react-query';
 
 import rootRouter from '@/routers';
 

@@ -1,5 +1,6 @@
-import appConfig from '@/config';
 import axios, { AxiosError } from 'axios';
+
+import appConfig from '@/config';
 
 export const baseURL = appConfig.API_URL;
 
