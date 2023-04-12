@@ -1,5 +1,5 @@
 {
-  "name": "wei",
+  "name": "<%= projectName %>",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
@@ -16,6 +16,11 @@
     "stylelint:fix": "stylelint **/*.scss --fix",
     "pre-commit": "yarn lint-staged"
   },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "not dead"
+  ],
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
     "axios": "^1.2.3",
@@ -63,6 +68,7 @@
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
     "@vitejs/plugin-react": "^3.0.0",
+    "autoprefixer": "^10.4.14",
     "dist-size": "^0.4.0",
     "eslint": "^8.32.0",
     "eslint-config-prettier": "^8.6.0",
@@ -72,6 +78,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.3",
     "lint-staged": ">=10",
+    "postcss": "^8.4.21",
     "prettier": "^2.8.3",
     "sass": "^1.57.1",
     "stylelint": "^14.16.1",
@@ -81,6 +88,7 @@
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
     "vite-plugin-checker": "^0.5.5",
+    "vite-plugin-dynamic-import": "^1.2.7",
     "vite-plugin-env-compatible": "^1.1.1"
   }
 }

@@ -1,9 +1,10 @@
-import { defineConfig, splitVendorChunkPlugin } from 'vite';
 import react from '@vitejs/plugin-react';
-import svgr from 'vite-plugin-svgr';
+import autoprefixer from 'autoprefixer';
 import * as path from 'path';
+import { defineConfig, splitVendorChunkPlugin } from 'vite';
 import checker from 'vite-plugin-checker';
-import envCompatible from 'vite-plugin-env-compatible';
+import dynamicImport from 'vite-plugin-dynamic-import';
+import svgr from 'vite-plugin-svgr';
 
 /** @type {import('vite').UserConfig} */
 export default defineConfig({
@@ -23,6 +24,9 @@ export default defineConfig({
     modules: {
       localsConvention: 'camelCaseOnly',
       hashPrefix: 'prefix',
+    },
+    postcss: {
+      plugins: [autoprefixer({})],
     },
     devSourcemap: true,
   },
@@ -53,6 +57,6 @@ export default defineConfig({
       eslint: { lintCommand: 'eslint --fix --ext .js,.jsx,.ts,.tsx ./src' },
       stylelint: { lintCommand: 'stylelint **/*.scss --fix' },
     }),
-    envCompatible({ prefix: 'VITE' }),
+    dynamicImport(),
   ],
 });
